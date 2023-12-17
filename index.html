@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+<header class=" header w-100 vh-100 ">
+    <div class="container py-5 d-flex flex-column justify-content-center align-items-center w-100">
+        <h1 class="fw-bolder  mb-5  text-center">Bookmarker</h1>
+        <div class=" w-100 d-flex justify-content-center align-items-center flex-column  my-3  py-3 content">
+            <h2 class="my-3 text-center">
+                <i class="fa-solid fa-bookmark"></i>
+                "Bookmark your favorite sites"
+                <i class="fa-solid fa-bookmark"></i>
+
+            </h2>
+            <div class="my-3 w-100">
+                <label for="name" class="pb-2 lable fw-bolder">
+                    <i class="fa-solid fa-book-bookmark pe-2"></i>
+                    Sit Name
+                </label>
+                <input type="text" id="name" placeholder="book name" class="form-control" oninput="vaildationName()">
+            </div>
+            <div class="my-3 w-100">
+                <label for="url" class="pb-2 lable fw-bolder">
+                    <i class="fa-solid fa-link pe-2"></i>
+                    Site URL
+                </label>
+                <input type="url" id="url" placeholder=" Website Url" class="form-control" oninput="vaildationurl()">
+            </div>
+            <button onclick="adddata()" class="rounded  py-2 px-5 text-center">Submit</button>
+        </div>
+        <table class="table table-striped">
+            <thead >
+                <tr>
+                    <th>index</th>
+                    <th>Website Name</th>
+                    <th>Visite</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tablebody">
+                
+            </tbody>
+        </table>
+      
+
+
+    </div>
+
+</header>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
